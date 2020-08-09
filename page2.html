@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>The Stephen Curry Effect</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.3.2/d3-annotation.js"></script>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<style>
+  .line {
+       fill: none;
+       /*stroke: #aaa;
+       stroke: #43484c;
+       stroke: #405275;
+       stroke: rgba(40, 53, 79, .95);
+       stroke: #161719;
+       stroke: #f99e1a;*/
+       stroke: #f89e35;
+       stroke-width: 2px;
+   }
+
+   .line2 {
+       fill: none;
+       stroke: #aaa;
+       stroke-width: 2px;
+   }
+
+   .line3 {
+       fill: none;
+       stroke: #405275;
+       stroke-width: 2px;
+   }
+
+   .line3-text {
+       fill: #405275;
+       stroke: #405275;
+   }
+
+   .line2-text {
+       fill: #aaa;
+       stroke: #aaa;
+   }
+
+   .line-text {
+       fill: #f89e35;
+       stroke: #f89e35;
+   }
+
+   div.tooltip {
+       position: absolute;
+       text-align: left;
+       padding: 5px;
+       font-size: 12px;
+       font-weight: bold;
+       background: #f99e1a;
+       border: 0px;
+       border-radius: 8px;
+   }
+
+   .tooltip p {
+       margin: 0;
+       padding: 0;
+   }
+
+   circle {
+       fill: rgba(40, 53, 79, .95);
+   }
+</style>
+<body style="padding-bottom: 5%">
+  <h2 class="w3-center">The Stephen Curry Effect</h2>
+
+  <div class="intro-text" style="padding: 5%">
+    <h3>Impact across the NBA</h3><br>
+    When Curry came into the league, most NBA teams had yet to make the three-point shot a part of their gameplan to actually win games. Shooting threes was more of a complement to the more traditional method of attacking the paint. Steph changed all of that, when he showed that he can make those shot attempts at a much higher rate than ever before. From a mathematical standpoint, as the shooting percentage rises from beyond the arc, it becomes a more valuable shot. It could even become more preferable to a higher-percentage two-point bucket.
+    <br><br>
+    The effects of Curry’s game have ripple far beyond the confines of the Bay Area. In fact, never in the history of the NBA has the deep three-point shot been utilized as much as the modern NBA. Players are consistently taking shots from way beyond the arc with impressive shooting percentages. Emulating Curry is not easy, but other players around the league began to realize the dramatic benefits it would add to their respective games.
+    <br>
+    If we observe the trend of the average number of 3-Pointers attempted over a season in the NBA, we notice that the number has been increasing through the decade. This is with the exception of the 2011-2012 season, where the season was shortened.
+
+    However, after Stephen Curry's MVP season in 2015-2016, we notice a sharper spike in the average number of three pointers taken by each team over the season. These numbers have only been rising since then.
+  </div>
+
+  <div id="scene-2">
+    <script src="scripts/scene2.js"></script>
+  </div>
+
+  <div class="w3-center" style="padding-top: 1%">
+    <a href="index.html"> < Previous | </a>
+    <a href="page3.html">Next > </a>
+  </div>
+
+
+</body>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>The Stephen Curry Effect</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+  <!-- Load d3-annotation -->
+<script src="https://rawgit.com/susielu/d3-annotation/master/d3-annotation.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.3.2/d3-annotation.js"></script>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<style>
+.mySlides {display:none;}
+</style>
+<body style="padding-bottom: 5%">
+
+  <h2 class="w3-center">The Stephen Curry Effect</h2>
+
+  <div class="w3-content w3-display-container" style="max-width: 75%;">
+    <img class="mySlides" src="assets/stephen-curry.jpg" style="width:100%">
+    <img class="mySlides" src="assets/steph-deep.jpg" style="width:100%">
+    <img class="mySlides" src="assets/steph-gif.gif" style="width:100%">
+    <img class="mySlides" src="assets/steph-gif-2.gif" style="width:100%">
+
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+
+  <div class="intro-text" style="padding: 5%;">
+    Despite not having played the full season this year, Stephen Curry is undoubtedly one of the greatest players in this game. Not only is Steph Curry one of the greatest players, he has single handedly revolutionized the way
+    basketball is played in the NBA. There aren't many players you can say that have changed basketball. However during the 2015 and 2016 seasons -- Steph Curry changed basketball and the entire league.<br>
+    <br>
+    Back in the summer of 2009, when Steph Curry was drafted by the Golden State Warriors, nobody knew what to expect. A pure shooter, who had the ability to take over a game at a moment’s notice, Curry certainly attracted a great deal of attention from NBA scouts. His performance in NCAA March Madness catapulted him all the way to the seventh overall pick in the draft.
+    Fast forward ten years into the future, and Curry has already accomplished more than most NBA players could ever imagine. A three-time NBA champion, he has taken the Warriors organization to a new level, mimicking the NFL’s New England Patriots in terms of dominance and consistency. On a personal level, Curry has claimed the NBA MVP Award twice, and he is already a six-time All-Star.
+    <br>
+    <br>
+    But the most interesting facet of his achievements is the way in which he has achieved it all. Curry is notorious for his three-point shooting abilities. It’s remarkable and fun watching him play. The ease with which he shoots the ball from long distance is something that has truly changed the game.
+    The volume and efficiency with which Stephen Curry shoots the three pointer, is historical to say the least. We can easily see how he stood out amongst the league's top 3-Point shooters (by volume) in his MVP 2015-2016 season by looking at the following scatter plot.
+  </div>
+  <h4 class="w3-center">3-Pointers Attempted vs. 3-Pointers Made per game in the 2015-16 Season<br>(Top 50 Shooters by Volume)</h4>
+  <div id="scene-1">
+    <script src="scripts/scene1.js"></script>
+  </div>
+
+
+  <div class="w3-center">
+    <a href="page2.html">Next > </a>
+  </div>
+
+
+</body>
+
+
+<script>
+  // Slide Show
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+  }
+</script>
+
+</html>
